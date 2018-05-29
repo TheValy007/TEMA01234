@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+  
+                                                              
+  <title>p1</title><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"></head>
+
+<body bgcolor="#ffff99" text="#000000" link="#0000ee" alink="#0000ee" vlink="#551a8b">
+                  
+<address><a href="dreapta.html"><img src="p3_files/47311-thin-gray-back.png" alt="" width="200" height="90" border="0">
+       </a><br>
+       <br>
+      </address>
+   <b>Aplicatia 1</b><br>
+   <br>
+<pre>  //clasa de baza</pre>
+<pre>class Forma</pre>
+<pre>{</pre>
+<pre> //membri variabila</pre>
+<pre>protected double _inaltime;</pre>
+<pre> protected double _latime;</pre>
+<pre> //constructor pentru clasa Forma</pre>
+<pre>public Forma(double inaltime,
+ double latime)</pre>
+<pre>{</pre>
+<pre>_inaltime
+ = inaltime;</pre>
+<pre>_latime
+ = latime;</pre>
+<pre>}</pre>
+<pre>}</pre>
+<pre>//clasa Dreptunghi mosteneste</pre>
+<pre>//clasa Forma</pre>
+<pre>class Dreptunghi : Forma</pre>
+<pre>{</pre>
+<pre>//membru variabila privat</pre>
+<pre>string stil;</pre>
+   
+<pre><br> //utilizam base pentru</pre>
+<pre>//a executa constructorul </pre>
+<pre> //clasei de vaza</pre>
+<pre>public Dreptunghi(string s,
+double  inaltime, double latime)</pre>
+<pre>: base(inaltime, latime)</pre>
+<pre>{</pre>
+<pre>stil 
+= s;</pre>
+<pre>}</pre>
+<pre>}</pre>
+   <br>
+   <b>Aplicatia 2</b><br>
+   <br>
+<pre>//clasa de baza</pre>
+<pre>class Forma</pre>
+<pre>{</pre>
+<pre>public double inaltime;</pre>
+<pre>public double latime;</pre>
+<pre>public void AfiseazaDimensiune()</pre>
+<pre>{ </pre>
+<pre>Console.WriteLine("inaltime:
+ {0}, latime: {1}",inaltime,latime);</pre>
+<pre>}</pre>
+<pre>}</pre>
+   <br>
+   <b>Aplicatia 3</b><br>
+   <br>
+<pre>   //clasa Dreptunghi mosteneste</pre>
+<pre>//clasa Forma</pre>
+<pre>class Dreptunghi : Forma</pre>
+<pre>{</pre>
+<pre>public double Aria()</pre>
+<pre>{</pre>
+<pre>//clasa
+ Dreptunghi poate</pre>
+<pre>//referi
+ membrii clasei Forma</pre>
+<pre>//ca 
+membri proprii</pre>
+<pre>return
+ inaltime * latime;</pre>
+<pre>}</pre>
+<pre>}</pre>
+</body></html>
